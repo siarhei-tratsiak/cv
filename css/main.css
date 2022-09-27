@@ -115,14 +115,25 @@ body {
   width: 938px;
 }
 
-#cv-name {
+.bold {
+  font-weight: bold;
+}
+
+#applicant-name {
   font-family: 'Raleway', sans-serif;
   font-size: 44px;
   font-weight: 300;
   letter-spacing: 0.5em;
+  margin-bottom: 72px;
   margin-top: 87px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (max-width: 420px) {
+  #applicant-name {
+    font-size: 10vw;
+  }
 }
 
 /* ==========================================================================
