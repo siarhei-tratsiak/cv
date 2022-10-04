@@ -127,6 +127,7 @@ body {
 }
 
 main {
+  align-items: stretch;
   display: flex;
   flex-wrap: wrap;
 }
@@ -169,17 +170,27 @@ main {
 }
 
 .section {
+  margin-bottom: 50px;
   margin-top: 50px;
+  position: relative;
+}
+
+.section::after {
+  border-bottom: 2px solid #dbdbdb;
+  bottom: -50px;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
 }
 
 .left-section {
-  border-right: 2px solid #dbdbdb;
-  width: 238px;
+  width: 240px;
+  box-shadow: inset -2px 0 #dbdbdb;
 }
 
 .right-section {
   box-sizing: border-box;
-  padding-left: 47px;
   width: 536px;
 }
 
@@ -211,6 +222,19 @@ address {
 .contact-icon {
   margin-right: 13px;
   width: 16px;
+}
+
+#profile-section .section-header {
+  padding-left: 47px;
+}
+
+#profile-section p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.55px;
+  line-height: 20px;
+  padding-left: 47px;
 }
 
 /* ==========================================================================
