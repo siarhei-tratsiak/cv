@@ -11,7 +11,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&family=Roboto:wght@500;600&display=swap');
 
 html {
   color: #222;
@@ -114,7 +114,7 @@ body {
   color: #4c4c4c;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 51px;
   max-width: 100vw;
   padding: 87px 80px;
@@ -132,10 +132,6 @@ main {
   align-items: stretch;
   display: flex;
   flex-wrap: wrap;
-}
-
-b {
-  font-weight: 800;
 }
 
 .header {
@@ -235,9 +231,6 @@ address {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
   letter-spacing: 0.55px;
   line-height: 20px;
   margin-bottom: 0;
@@ -246,6 +239,12 @@ p {
 
 #profile-section p {
   padding-left: 47px;
+}
+
+.left-section,
+.subsection {
+  box-sizing: border-box;
+  padding-right: 5px;
 }
 
 .subsection::after {
@@ -258,17 +257,22 @@ p {
 }
 
 .subsection-header {
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0.7px;
   margin-bottom: 0px;
   margin-top: 0;
 }
 
-#languages-list {
+.section-list {
   line-height: 20px;
   list-style: none;
   padding: 0;
+}
+
+.section-list b {
+  font-weight: 600;
 }
 
 /* ==========================================================================
