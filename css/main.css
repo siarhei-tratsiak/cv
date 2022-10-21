@@ -89,29 +89,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+:root {
+  --left-section-width: 240px;
+}
+
 html {
   background-image: linear-gradient(to right bottom, #d0aa9b, #824f3c);
   display: flex;
   justify-content: center;
 }
 
-#background-image {
-  background-image: url('/img/bg.webp');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 1257px;
-  filter: opacity(0.2);
-  height: 200vh;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
 body {
   background-color: #f7f7f7;
   box-sizing: border-box;
-  color: #4c4c4c;
+  color: #666666;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -189,13 +180,13 @@ main {
 }
 
 .left-section {
-  width: 240px;
+  width: var(--left-section-width);
   box-shadow: inset -2px 0 #dbdbdb;
 }
 
 .right-section {
   box-sizing: border-box;
-  width: 536px;
+  width: calc(100% - var(--left-section-width));
 }
 
 .section-header {
@@ -226,7 +217,7 @@ address {
   width: 16px;
 }
 
-#profile-section .section-header {
+.right-section > * {
   padding-left: 47px;
 }
 
@@ -237,17 +228,13 @@ p {
   margin-top: 2px;
 }
 
-#profile-section p {
-  padding-left: 47px;
-}
-
 .left-section,
 .subsection {
   box-sizing: border-box;
   padding-right: 5px;
 }
 
-.subsection::after {
+.subsection:not(:last-of-type)::after {
   border-bottom: 2px solid #dbdbdb;
   content: '';
   display: block;
@@ -273,6 +260,20 @@ p {
 
 .section-list b {
   font-weight: 600;
+}
+
+#jobs-list {
+  transform: translateX(-43px);
+}
+
+#jobs-list>li {
+  margin-bottom: 44px;
+  padding-left: 43px;
+}
+
+#jobs-list>li::marker {
+  color: #a2a2a2;
+  content: "⬤";
 }
 
 /* ==========================================================================
