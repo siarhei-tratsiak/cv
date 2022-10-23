@@ -375,6 +375,34 @@ p {
   /* Style adjustments for high resolution devices */
 }
 
+@media (max-width: 640px) {
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .left-section {
+    box-shadow: none;
+  }
+
+  .right-section > * {
+    padding-left: 0;
+  }
+
+  #jobs-list {
+    transform: translateX(0);
+  }
+
+  #jobs-list>li {
+    margin-bottom: 44px;
+    padding-left: 0;
+  }
+
+  #jobs-list>li::marker {
+    content: " ";
+  }
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
