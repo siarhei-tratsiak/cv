@@ -132,31 +132,30 @@ main {
   text-transform: uppercase;
 }
 
-#applicant-name,
-#professional-title {
+.applicant-header {
   letter-spacing: 0.5em;
   text-align: center;
   width: 100%;
 }
 
-#applicant-name {
+.applicant-name {
   font-size: 2.75rem;
   font-weight: 300;
   margin-bottom: 72px;
   margin-top: 87px;
 }
 
-#applicant-name b {
-  font-weight: 600;
-}
-
 @media (max-width: 420px) {
-  #applicant-name {
+  .applicant-name {
     font-size: 10vw;
   }
 }
 
-#professional-title {
+.applicant-name__first-name {
+  font-weight: 600;
+}
+
+.professional-title {
   border-bottom: 2px solid #dbdbdb;
   border-top: 2px solid #dbdbdb;
   font-size: 1rem;
@@ -181,6 +180,14 @@ main {
   width: 100%;
 }
 
+.section__header {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  margin-bottom: 28px;
+  margin-top: 0;
+}
+
 .left-section {
   box-shadow: inset -2px 0 #dbdbdb;
   width: var(--left-section-width);
@@ -191,19 +198,12 @@ main {
   width: calc(100% - var(--left-section-width));
 }
 
-.section-header {
-  font-size: 1.125rem;
-  font-weight: 600;
-  letter-spacing: 0.3em;
-  margin-bottom: 28px;
-  margin-top: 0;
+.right-section > * {
+  padding-left: calc(var(--jobs-list-padding) + 0.25rem);
 }
 
-address {
+.contact-list {
   font-style: normal;
-}
-
-#contact-list {
   line-height: 1.6875rem;
   list-style: none;
   margin: 0;
@@ -214,23 +214,18 @@ address {
   text-decoration: none;
 }
 
-.contact-icon {
+.contact-link__icon {
   margin-right: 13px;
   width: 16px;
 }
 
-.right-section > * {
-  padding-left: calc(var(--jobs-list-padding) + 0.25rem);
-}
-
-p {
+.paragraph {
   letter-spacing: 0.55px;
   line-height: 1.25rem;
   margin-bottom: 0;
   margin-top: 2px;
 }
 
-.left-section,
 .subsection {
   box-sizing: border-box;
   padding-right: 5px;
@@ -245,7 +240,7 @@ p {
   width: 100px;
 }
 
-.subsection-header {
+.subsection__header {
   font-family: 'Roboto', sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
@@ -260,20 +255,20 @@ p {
   padding: 0;
 }
 
-.section-list b {
+.section-list__skill {
   font-weight: 600;
 }
 
-#jobs-list {
+.jobs-list {
   transform: translateX(calc(var(--jobs-list-padding) * -1));
 }
 
-#jobs-list>li {
+.jobs-list-item {
   margin-bottom: 44px;
   padding-left: var(--jobs-list-padding);
 }
 
-#jobs-list>li::marker {
+.jobs-list-item::marker {
   color: #a2a2a2;
   content: "⬤";
 }
@@ -392,20 +387,20 @@ p {
     padding-left: 0;
   }
 
-  #contact-list>li {
+  .contact-list-item {
     line-height: 48px;
   }
 
-  #jobs-list {
+  .jobs-list {
     transform: translateX(0);
   }
 
-  #jobs-list>li {
+  .jobs-list-item {
     margin-bottom: 44px;
     padding-left: 0;
   }
 
-  #jobs-list>li::marker {
+  .jobs-list-item::marker {
     content: " ";
   }
 }
@@ -490,7 +485,7 @@ p {
     page-break-after: avoid;
   }
 
-  #jobs-list {
+  .jobs-list {
     background-color: transparent !important;
   }
 }

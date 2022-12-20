@@ -27,18 +27,20 @@
 
 <body>
   <main>
-    <h1 id="applicant-name" class="header">
-      <b>Siarhei</b> Tratsiak
+    <h1 class="header applicant-header applicant-name">
+      <b class="applicant-name__first-name">Siarhei</b> Tratsiak
     </h1>
 
-    <h2 id="professional-title" class="header">Frontend Developer</h2>
+    <h2 class="header applicant-header professional-title">
+      Frontend Developer
+    </h2>
 
     <section class="section left-section" id="contact-section">
-      <h3 class="header section-header">Contact</h3>
+      <h3 class="header section__header">Contact</h3>
 
       <address>
-        <ul id="contact-list">
-          <li>
+        <ul class="contact-list">
+          <li class="contact-list-item">
             <a
               class="contact-link"
               href="https://t.me/arkhan_land"
@@ -46,7 +48,7 @@
             >
               <img
                 alt=""
-                class="contact-icon"
+                class="contact-link__icon"
                 height="16"
                 src="img/telegram.png"
                 width="16"
@@ -56,7 +58,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="contact-list-item">
             <a
               class="contact-link"
               href="https://www.linkedin.com/in/sergey-tretyak"
@@ -64,7 +66,7 @@
             >
               <img
                 alt=""
-                class="contact-icon"
+                class="contact-link__icon"
                 height="16"
                 src="img/linkedin.png"
                 width="16"
@@ -74,7 +76,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="contact-list-item">
             <a
               class="contact-link"
               href="https://github.com/SerafimGray"
@@ -82,7 +84,7 @@
             >
               <img
                 alt=""
-                class="contact-icon"
+                class="contact-link__icon"
                 height="16"
                 src="img/github.png"
                 width="16"
@@ -92,7 +94,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="contact-list-item">
             <a
               class="contact-link"
               href="mailto:decimacalleb@gmail.com"
@@ -100,7 +102,7 @@
             >
               <img
                 alt=""
-                class="contact-icon"
+                class="contact-link__icon"
                 height="16"
                 src="img/email.png"
                 width="16"
@@ -110,10 +112,10 @@
             </a>
           </li>
 
-          <li>
+          <li class="contact-list-item">
             <img
               alt=""
-              class="contact-icon"
+              class="contact-link__icon"
               height="16"
               src="img/home.png"
               width="16"
@@ -122,11 +124,11 @@
             Krakow, Poland
           </li>
 
-          <li>
+          <li class="contact-list-item">
             <a href="tel:+48573815066" class="contact-link">
               <img
                 alt=""
-                class="contact-icon"
+                class="contact-link__icon"
                 height="16"
                 src="img/mobile-phone.png"
                 width="16"
@@ -140,88 +142,95 @@
     </section>
 
     <section class="section right-section" id="profile-section">
-      <h3 class="header section-header">Profile</h3>
+      <h3 class="header section__header">Profile</h3>
 
-      <p>I'm a web developer with experience in commercial development and
-        freelancing, remote and office work, in a team and alone. I'm constantly
-        improving my stack and learning new technologies.</p>
+      <p class="paragraph">I'm a web developer with experience in commercial
+        development and freelancing, remote and office work, in a team and alone.
+        I'm constantly improving my stack and learning new technologies.</p>
     </section>
 
     <div class="section left-section" id="education-section">
       <section class="subsection">
-        <h3 class="header section-header">Education</h3>
+        <h3 class="header section__header">Education</h3>
 
-        <h4 class="header subsection-header">Bachelor of Mathematics</h4>
+        <h4 class="header subsection__header">Bachelor of Mathematics</h4>
 
-        <p>Grodno State University</p>
+        <p class="paragraph">Grodno State University</p>
 
-        <p>2006 - 2011</p>
+        <p class="paragraph">2006 - 2011</p>
       </section>
 
       <section class="subsection">
-        <h3 class="header section-header">Languages</h3>
+        <h3 class="header section__header">Languages</h3>
 
         <ul class="section-list" id="languages-list">
           <li>
-            <b>English</b> - Upper-Intermediate (B2)
+            <b class="section-list__skill">English</b> - Upper-Intermediate (B2)
           </li>
 
           <li>
-            <b>Polish</b> - Pre-Intermediate (A2)
+            <b class="section-list__skill">Polish</b> - Pre-Intermediate (A2)
           </li>
 
           <li>
-            <b>Russian</b> - Native (C2)
+            <b class="section-list__skill">Russian</b> - Native (C2)
           </li>
         </ul>
       </section>
 
       <section class="subsection">
-        <h3 class="header section-header">Skills</h3>
+        <h3 class="header section__header">Skills</h3>
 
         <ul class="section-list" id="skills-list">
           <li>
-            <b>HTML</b> - semantic, best practices, accessibility, SEO
+            <b class="section-list__skill">HTML</b>
+            - semantic, best practices, accessibility, SEO
           </li>
 
           <li>
-            <b>CSS</b> - Flex, Grid, responsive design and media queries, SASS,
+            <b class="section-list__skill">CSS</b>
+            - Flex, Grid, responsive design and media queries, SASS,
             Bootstrap, BEM
           </li>
 
           <li>
-            <b>JavaScript</b> - DOM manipulation, promises, modules, ES6+,
+            <b class="section-list__skill">JavaScript</b>
+            - DOM manipulation, promises, modules, ES6+,
             TypeScript
           </li>
 
           <li>
-            <b>Vue</b> - Vue CLI, Composition API, Vue Router, Nuxt.js, Vue
+            <b class="section-list__skill">Vue</b>
+            - Vue CLI, Composition API, Vue Router, Nuxt.js, Vue
             Test Utils, Vuex, Pinia, Vuetify, Axios, Bootstrap-vue, Element Plus
           </li>
 
           <li>
-            <b>Tools</b> - Git, Github, npm, ESLint, Vite, Webpack, Jest, Vitest
+            <b class="section-list__skill">Tools</b>
+            - Git, Github, npm, ESLint, Vite, Webpack, Jest, Vitest
           </li>
         </ul>
       </section>
     </div>
 
     <section class="section right-section">
-      <h3 class="header section-header">Work Experience</h3>
+      <h3 class="header section__header">Work Experience</h3>
 
-      <ul id="jobs-list">
-        <li>
-          <h4 class="header subsection-header">Frontend Web Developer</h4>
+      <ul class="jobs-list">
+        <li class="jobs-list-item">
+          <h4 class="header subsection__header">Frontend Web Developer</h4>
 
-          <p>Godel Technologies Europe sp. z o.o. | 2022 - present</p>
+          <p class="paragraph">
+            Godel Technologies Europe sp. z o.o. | 2022 - present
+          </p>
         </li>
 
-        <li>
-          <h4 class="header subsection-header">Frontend Web Developer</h4>
+        <li class="jobs-list-item">
+          <h4 class="header subsection__header">Frontend Web Developer</h4>
 
-          <p>TwelveDevs | 2021 - 2022</p>
+          <p class="paragraph">TwelveDevs | 2021 - 2022</p>
 
-          <p>achievements:</p>
+          <p class="paragraph">achievements:</p>
 
           <ul>
             <li>developed new functionality</li>
@@ -230,21 +239,24 @@
             <li>implemented principles of clean code and clean architecture</li>
           </ul>
 
-          <p>project: OpenDining</p>
+          <p class="paragraph">project: OpenDining</p>
 
-          <p>description: service for restaurants remote food ordering</p>
+          <p class="paragraph">
+            description: service for restaurants remote food ordering
+          </p>
 
-          <p>technologies: HTML, CSS, SCSS, JavaScript, Vue, Vuex, Vue Router,
+          <p class="paragraph">
+            technologies: HTML, CSS, SCSS, JavaScript, Vue, Vuex, Vue Router,
             Bootstrap-vue, Nuxt.js, Git, Github, Node, npm, Axios, Webpack, Jest
           </p>
         </li>
 
-        <li>
-          <h4 class="header subsection-header">Web Developer</h4>
+        <li class="jobs-list-item">
+          <h4 class="header subsection__header">Web Developer</h4>
 
-          <p>Upwork | 2016 - 2021</p>
+          <p class="paragraph">Upwork | 2016 - 2021</p>
 
-          <p>achievements:</p>
+          <p class="paragraph">achievements:</p>
 
           <ul>
             <li>high rating</li>
@@ -252,20 +264,20 @@
             <li>entry into the list of top-talents in the first year of work</li>
           </ul>
 
-          <p>project: Simplex Food</p>
+          <p class="paragraph">project: Simplex Food</p>
 
-          <p>description: application for calculating
+          <p class="paragraph">description: application for calculating
             the balance of nutrients in a diet</p>
 
-          <p>technologies: HTML, CSS, JavaScript, Vue, Vuex, Vue Router, Vuetify, Dexie,
-            Git, Github, Node, npm, Webpack
+          <p class="paragraph">technologies: HTML, CSS, JavaScript, Vue, Vuex,
+            Vue Router, Vuetify, Dexie, Git, Github, Node, npm, Webpack
           </p>
         </li>
 
-        <li>
-          <h4 class="header subsection-header">Customer</h4>
+        <li class="jobs-list-item">
+          <h4 class="header subsection__header">Customer</h4>
 
-          <p>Grodno Regional Customs | 2011 - 2016</p>
+          <p class="paragraph">Grodno Regional Customs | 2011 - 2016</p>
         </li>
       </ul>
     </section>
