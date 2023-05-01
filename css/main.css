@@ -94,6 +94,7 @@ textarea {
   --left-section-width: 240px;
   --jobs-list-padding: 43px;
   --section-padding: 51px;
+  --text-color: #666666;
 }
 
 html {
@@ -105,7 +106,7 @@ html {
 body {
   background-color: #f7f7f7;
   box-sizing: border-box;
-  color: #666666;
+  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
@@ -182,6 +183,12 @@ main {
   margin-top: 0;
 }
 
+.section-header__icon {
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  padding: 2px;
+}
+
 .left-section {
   width: var(--left-section-width);
 }
@@ -228,7 +235,11 @@ main {
   letter-spacing: 0.55px;
   line-height: 1.25rem;
   margin-bottom: 0;
-  margin-top: 2px;
+  margin-top: 4px;
+}
+
+.paragraph__big {
+  text-indent: 1rem;
 }
 
 .subsection {
