@@ -90,8 +90,10 @@ textarea {
    ========================================================================== */
 
 :root {
+  --border: 2px solid #dbdbdb;
   --left-section-width: 240px;
   --jobs-list-padding: 43px;
+  --section-padding: 51px;
 }
 
 html {
@@ -124,7 +126,7 @@ main {
   align-items: stretch;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 51px;
+  padding-bottom: var(--section-padding);
 }
 
 .header {
@@ -156,8 +158,8 @@ main {
 }
 
 .professional-title {
-  border-bottom: 2px solid #dbdbdb;
-  border-top: 2px solid #dbdbdb;
+  border-bottom: var(--border);
+  border-top: var(--border);
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
@@ -166,18 +168,10 @@ main {
 }
 
 .section {
-  margin-bottom: 51px;
-  margin-top: 51px;
+  border-bottom: var(--border);
+  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding);
   position: relative;
-}
-
-.section::after {
-  border-bottom: 2px solid #dbdbdb;
-  bottom: -51px;
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
 }
 
 .section__header {
@@ -189,8 +183,19 @@ main {
 }
 
 .left-section {
-  box-shadow: inset -2px 0 #dbdbdb;
   width: var(--left-section-width);
+}
+
+.left-section::after {
+  border-right: var(--border);
+  bottom: calc(-1 * var(--section-padding));
+  content: '';
+  display: block;
+  height: calc(100% - 2 * var(--section-padding));
+  position: absolute;
+  right: 0;
+  top: var(--section-padding);
+  width: 0;
 }
 
 .right-section {
@@ -232,7 +237,7 @@ main {
 }
 
 .subsection:not(:last-of-type)::after {
-  border-bottom: 2px solid #dbdbdb;
+  border-bottom: var(--border);
   content: '';
   display: block;
   margin-bottom: 50px;
@@ -381,6 +386,10 @@ main {
 
   .left-section {
     box-shadow: none;
+  }
+
+  .left-section::after {
+    display: none;
   }
 
   .right-section > * {
