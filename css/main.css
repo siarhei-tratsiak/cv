@@ -91,7 +91,7 @@ textarea {
 
 :root {
   --border: 2px solid #dbdbdb;
-  --left-section-width: 240px;
+  --left-section-width: 200px;
   --jobs-list-padding: 43px;
   --section-padding: 51px;
   --text-color: #666666;
@@ -154,7 +154,7 @@ main {
   }
 }
 
-.applicant-name__first-name {
+.bold {
   font-weight: 600;
 }
 
@@ -169,10 +169,13 @@ main {
 }
 
 .section {
-  border-bottom: var(--border);
-  padding-bottom: var(--section-padding);
   padding-top: var(--section-padding);
   position: relative;
+}
+
+#contact-section, #profile-section {
+  border-bottom: var(--border);
+  padding-bottom: var(--section-padding);
 }
 
 .section__header {
@@ -190,6 +193,8 @@ main {
 }
 
 .left-section {
+  box-sizing: border-box;
+  padding-right: 15px;
   width: var(--left-section-width);
 }
 
@@ -242,9 +247,12 @@ main {
   text-indent: 1rem;
 }
 
+ul {
+  padding-left: 2rem;
+}
+
 .subsection {
   box-sizing: border-box;
-  padding-right: 5px;
 }
 
 .subsection:not(:last-of-type)::after {
@@ -269,10 +277,6 @@ main {
   line-height: 1.25rem;
   list-style: none;
   padding: 0;
-}
-
-.section-list__skill {
-  font-weight: 600;
 }
 
 .jobs-list {
@@ -503,6 +507,11 @@ main {
   h2,
   h3 {
     page-break-after: avoid;
+  }
+
+  .applicant-name {
+    font-size: 2.5rem;
+    margin-top: 50px;
   }
 
   .jobs-list {
