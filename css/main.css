@@ -173,7 +173,8 @@ main {
   position: relative;
 }
 
-#contact-section, #profile-section {
+#contact-section,
+#profile-section {
   border-bottom: var(--border);
   padding-bottom: var(--section-padding);
 }
@@ -215,7 +216,7 @@ main {
   width: calc(100% - var(--left-section-width));
 }
 
-.right-section > * {
+.right-section>* {
   padding-left: calc(var(--jobs-list-padding) + 0.25rem);
 }
 
@@ -386,14 +387,15 @@ ul {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
 @media screen and (max-width: 640px),
-  print and (max-width: 480px) {
+print and (max-width: 480px) {
+
   .left-section,
   .right-section {
     width: 100%;
@@ -407,7 +409,7 @@ ul {
     display: none;
   }
 
-  .right-section > * {
+  .right-section>* {
     padding-left: 0;
   }
 
@@ -436,6 +438,7 @@ ul {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -509,6 +512,10 @@ ul {
     page-break-after: avoid;
   }
 
+  .contact-list {
+    word-wrap: break-word;
+  }
+
   .applicant-name {
     font-size: 2.5rem;
     margin-top: 20px;
@@ -518,4 +525,3 @@ ul {
     background-color: transparent !important;
   }
 }
-
