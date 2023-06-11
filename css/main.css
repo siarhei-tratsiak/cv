@@ -213,11 +213,8 @@ main {
 
 .right-section {
   box-sizing: border-box;
-  width: calc(100% - var(--left-section-width));
-}
-
-.right-section>* {
   padding-left: calc(var(--jobs-list-padding) + 0.25rem);
+  width: calc(100% - var(--left-section-width));
 }
 
 .contact-list {
@@ -242,10 +239,6 @@ main {
   line-height: 1.25rem;
   margin-bottom: 0;
   margin-top: 4px;
-}
-
-.paragraph__big {
-  text-indent: 1rem;
 }
 
 ul {
@@ -281,7 +274,7 @@ ul {
 }
 
 .jobs-list {
-  transform: translateX(calc(var(--jobs-list-padding) * -1));
+  transform: translateX(calc(-2rem - var(--jobs-list-padding)));
 }
 
 .jobs-list-item {
