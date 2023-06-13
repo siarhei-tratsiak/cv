@@ -170,86 +170,6 @@ main {
   padding-top: 14px;
 }
 
-.skills-section {
-  --size: 200px;
-  --margin: 20px;
-
-  position: relative;
-  width: 100%;
-}
-
-.skills-header {
-  background-color: var(--background-color);
-  border-radius: 50%;
-  display: block;
-  height: var(--size);
-  left: var(--margin);
-  line-height: var(--size);
-  margin: 0;
-  position: absolute;
-  text-align: center;
-  top: var(--margin);
-  width: var(--size);
-  z-index: 3;
-}
-
-.skills-pie {
-  border-radius: 50%;
-  height: var(--size);
-  margin: var(--margin);
-  padding: 0;
-  position: relative;
-  width: var(--size);
-}
-
-.skill {
-  display: block;
-}
-
-.skill-name {
-  --divider: 72deg;
-  --division: calc((var(--base) + var(--divider)) * 100 / var(--max));
-  /* 10.92deg */
-  --division-position: calc(-1 * var(--margin));
-  /* -20px */
-  --division-size: calc(var(--size) + var(--margin) * 2);
-  /* 240px */
-  --division-start: var(--start) - var(--divider) / 2;
-  /* 223.5deg */
-
-  background: conic-gradient(
-      /* -1.5deg */
-      from calc(var(--divider) / -2),
-      orange 0deg var(--divider),
-      transparent var(--divider));
-  border-radius: 50%;
-  display: block;
-  height: var(--division-size);
-  left: var(--division-position);
-  margin: 0;
-  text-align: center;
-  position: absolute;
-  top: var(--division-position);
-  transform: rotateZ(30deg);
-  width: var(--division-size);
-  z-index: 1;
-}
-
-.subskills {
-  position: relative;
-  transform: rotateZ(-90deg);
-}
-
-.subskill {
-  background-color: green;
-  display: block;
-  position: absolute;
-  transform: rotateZ(90deg);
-  transform-origin: 0 50%;
-  height: 200px;
-  z-index: 0;
-}
-
 .section {
   padding-top: var(--section-padding);
   position: relative;
@@ -356,7 +276,10 @@ ul {
 }
 
 .jobs-list {
-  transform: translateX(calc(-2rem - var(--jobs-list-padding)));
+  --shift: 2rem + var(--jobs-list-padding);
+
+  transform: translateX(calc(-1 * (var(--shift))));
+  width: calc(100% + var(--shift));
 }
 
 .jobs-list-item {
