@@ -279,7 +279,7 @@ ul {
   --shift: 2rem + var(--jobs-list-padding);
 
   transform: translateX(calc(-1 * (var(--shift))));
-  width: calc(100% + var(--shift));
+  width: calc(100% + var(--jobs-list-padding));
 }
 
 .right-section_list-item {
@@ -394,20 +394,21 @@ ul {
 @media screen and (max-width: 640px),
 print and (max-width: 480px) {
 
-  .left-section,
-  .right-section {
+  .left-sections,
+  .right-sections {
     width: 100%;
   }
 
-  .left-section {
+  .left-sections {
     box-shadow: none;
+    padding-right: 0;
   }
 
-  .left-section::after {
+  .left-sections::after {
     display: none;
   }
 
-  .right-section>* {
+  .right-sections {
     padding-left: 0;
   }
 
@@ -416,7 +417,9 @@ print and (max-width: 480px) {
   }
 
   .right-section_list {
+    padding-left: 0;
     transform: translateX(0);
+    width: auto;
   }
 
   .right-section_list-item {
