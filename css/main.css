@@ -170,7 +170,7 @@ main {
   padding-top: 14px;
 }
 
-.section {
+.sections {
   padding-top: var(--section-padding);
   position: relative;
 }
@@ -195,13 +195,13 @@ main {
   padding: 2px;
 }
 
-.left-section {
+.left-sections {
   box-sizing: border-box;
   padding-right: 15px;
   width: var(--left-section-width);
 }
 
-.left-section::after {
+.left-sections::after {
   border-right: var(--border);
   bottom: calc(-1 * var(--section-padding));
   content: '';
@@ -213,7 +213,7 @@ main {
   width: 0;
 }
 
-.right-section {
+.right-sections {
   box-sizing: border-box;
   padding-left: calc(var(--jobs-list-padding) + 0.25rem);
   width: calc(100% - var(--left-section-width));
@@ -275,19 +275,19 @@ ul {
   padding: 0;
 }
 
-.jobs-list {
+.right-section_list {
   --shift: 2rem + var(--jobs-list-padding);
 
   transform: translateX(calc(-1 * (var(--shift))));
   width: calc(100% + var(--shift));
 }
 
-.jobs-list-item {
+.right-section_list-item {
   margin-bottom: 44px;
   padding-left: var(--jobs-list-padding);
 }
 
-.jobs-list-item::marker {
+.right-section_list-item::marker {
   color: #a2a2a2;
   content: "⬤";
 }
@@ -415,16 +415,16 @@ print and (max-width: 480px) {
     line-height: 48px;
   }
 
-  .jobs-list {
+  .right-section_list {
     transform: translateX(0);
   }
 
-  .jobs-list-item {
+  .right-section_list-item {
     margin-bottom: 44px;
     padding-left: 0;
   }
 
-  .jobs-list-item::marker {
+  .right-section_list-item::marker {
     content: " ";
   }
 }
@@ -519,7 +519,7 @@ print and (max-width: 480px) {
     margin-top: 20px;
   }
 
-  .jobs-list {
+  .right-section_list {
     background-color: transparent !important;
   }
 }
