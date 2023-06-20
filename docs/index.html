@@ -26,8 +26,8 @@
   
 
   <meta name="theme-color" content="#fafafa">
-  <script type="module" crossorigin src="./assets/index-078af81f.js"></script>
-  <link rel="stylesheet" href="./assets/index-c35bebb3.css">
+  <script type="module" crossorigin src="./assets/index-723cc18e.js"></script>
+  <link rel="stylesheet" href="./assets/index-7c416d10.css">
 </head>
 
 <body>
@@ -40,7 +40,26 @@
       Vue Frontend Developer
     </h2>
 
-    <section class="section left-section" id="contact-section">
+    <section class="sections left-sections" id="profile-section">
+      <h3 class="header section__header">Profile</h3>
+
+      <p class="paragraph paragraph__big">If you need</p>
+
+      <ul>
+        <li>dynamic and interactive web application</li>
+        <li>responsive user interface</li>
+        <li>reliable, scalable, clean code</li>
+        <li>SOLID architecture</li>
+        <li>team player or solo player</li>
+        <li>experienced and constantly improving developer</li>
+      </ul>
+
+      <p class="paragraph paragraph__big">
+        then my services can be useful to you.
+      </p>
+    </section>
+
+    <section class="sections right-sections" id="contact-section">
       <h3 class="header section__header">
         Contact
       </h3>
@@ -96,34 +115,98 @@
       </address>
     </section>
 
-    <section class="section right-section" id="profile-section">
-      <h3 class="header section__header">Profile</h3>
-
-      <p class="paragraph paragraph__big">If you need</p>
-
-      <ul>
-        <li>dynamic and interactive web application</li>
-        <li>responsive user interface</li>
-        <li>reliable, scalable, clean code</li>
-        <li>SOLID architecture</li>
-        <li>team player or solo player</li>
-        <li>experienced and constantly improving developer</li>
-      </ul>
-
-      <p class="paragraph paragraph__big">
-        then my services can be useful to you.
-      </p>
-    </section>
-
-    <div class="section left-section" id="education-section">
+    <div class="sections left-sections">
       <section class="subsection">
-        <h3 class="header section__header">Education</h3>
+        <h3 class="header section__header">Skills</h3>
 
-        <h4 class="header subsection__header">Bachelor of Mathematics</h4>
+        <ul class="section-list" id="skills-list">
+          <li class="skill-item">
+            <b class="bold">HTML</b> (7 years of experience)
 
-        <p class="paragraph">Grodno State University</p>
+            <ul>
+              <li>accessibility</li>
+              <li>semantic</li>
+              <li>Canvas</li>
+              <li>Web Storage</li>
+              <li>IndexedDB</li>
+            </ul>
+          </li>
 
-        <p class="paragraph">2006 - 2011</p>
+          <li class="skill-item">
+            <b class="bold">CSS</b> (7 years of experience)
+
+            <ul>
+              <li>Flex</li>
+              <li>Grid</li>
+              <li>SASS</li>
+              <li>Bootstrap</li>
+              <li>BEM</li>
+            </ul>
+          </li>
+
+          <li class="skill-item">
+            <b class="bold">JavaScript</b> (7 years of experience)
+
+            <ul>
+              <li>DOM manipulation</li>
+              <li>Axios</li>
+              <li>modules</li>
+              <li>ES6+</li>
+              <li>TypeScript</li>
+            </ul>
+          </li>
+
+          <li class="skill-item">
+            <b class="bold">Vue 2-3</b> (3 years of experience)
+
+            <ul>
+              <li>Composition API</li>
+              <li>Vue Router</li>
+              <li>Vue Test Utils</li>
+
+              <li>state management
+                <ul>
+                  <li>Vuex</li>
+                  <li>Pinia</li>
+                </ul>
+              </li>
+
+              <li>frameworks
+                <ul>
+                  <li>Nuxt</li>
+                  <li>Vuetify</li>
+                  <li>BootstrapVue</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="skill-item">
+            <b class="bold">Tools</b>
+
+            <ul>
+              <li>version control
+                <ul>
+                  <li>Git</li>
+                  <li>Github</li>
+                </ul>
+              </li>
+
+              <li>bundlers
+                <ul>
+                  <li>Vite</li>
+                  <li>Webpack</li>
+                </ul>
+              </li>
+
+              <li>testing
+                <ul>
+                  <li>Jest</li>
+                  <li>Vitest</li>
+                </ul>
+              </li>
+          </li>
+        </ul>
       </section>
 
       <section class="subsection">
@@ -145,214 +228,195 @@
       </section>
 
       <section class="subsection">
-        <h3 class="header section__header">Skills</h3>
+        <h3 class="header section__header">About Me</h3>
 
-        <ul class="section-list" id="skills-list">
-          <li>
-            <b class="bold">HTML</b>
-            - semantic, best practices, accessibility, SEO
+        <p class="paragraph">
+          In my free time, I read books on programming, learn Python and C#,
+          get interested in neural networks, and work on pet projects.
+        </p>
+      </section>
+    </div>
+
+    <div class="sections right-sections">
+      <section class="subsection">
+        <h3 class="header section__header">Work Experience</h3>
+
+        <ul class="right-section_list">
+          <li class="right-section_list-item">
+            <h4 class="header subsection__header">Frontend Web Developer</h4>
+
+            <p class="paragraph">
+              <b class="bold">Godel Technologies Europe sp. z o.o.</b>
+
+              | June 2022 - May 2023
+            </p>
+
+            <p class="paragraph"><b class="bold">project:</b> Air Check</p>
+
+            <p class="paragraph">
+              <b class="bold">description:</b>
+
+              interface for carbon dioxide sensor
+            </p>
+
+            <p class="paragraph bold">achievements:</p>
+
+            <ul>
+              <li>
+                provided a pleasant user experience by designing the interface
+                with Vuetify;
+              </li>
+
+              <li>
+                enriched the user experience by implementing dynamic graphics
+                based on Chart.js;
+              </li>
+
+              <li>
+                provided communication with the backend by implementing the
+                functionality using Axios;
+              </li>
+
+              <li>
+                gave the application dynamics and interactivity by writing it
+                using Vue, Vue Router, Pinia;
+              </li>
+
+              <li>
+                gave the application scalability using TypeScript and SOLID
+                architecture;
+              </li>
+
+              <li>
+                increased the reliability of the code by covering it with unit
+                tests using Vitest;
+              </li>
+
+              <li>
+                ensured smooth development with tools such as Git, GitHub,
+                Vite, npm.
+              </li>
+            </ul>
           </li>
 
-          <li>
-            <b class="bold">CSS</b>
-            - Flex, Grid, responsive design and media queries, SASS,
-            Bootstrap, BEM
+          <li class="right-section_list-item">
+            <h4 class="header subsection__header">Frontend Web Developer</h4>
+
+            <p class="paragraph"><b class="bold">Twelvedevs</b> | July 2021 - May 2022</p>
+
+            <p class="paragraph"><b class="bold">project:</b> OpenDining</p>
+
+            <p class="paragraph">
+              <b class="bold">description:</b>
+
+              fully customizable online ordering system for restaurants
+            </p>
+
+            <p class="paragraph bold">achievements:</p>
+
+            <ul>
+              <li>
+                improved the user experience by extending the interface with
+                BootstrapVue and SCSS;
+              </li>
+
+              <li>
+                provided communication with the backend by integrating REST API
+                endpoints using Axios;
+              </li>
+
+              <li>
+                implemented a system of instant notifications through WebSockets;
+              </li>
+
+              <li>
+                increased the reliability of the code by covering it with unit
+                tests using Jest;
+              </li>
+
+              <li>
+                enriched the codebase by writing code using JavaScript, Vue,
+                Vuex, Vue-Router, Nuxt;
+              </li>
+
+              <li>
+                ensured smooth development with tools such as Git, GitHub,
+                Webpack, npm.
+              </li>
+            </ul>
           </li>
 
-          <li>
-            <b class="bold">JavaScript</b>
-            - DOM manipulation, promises, modules, ES6+,
-            TypeScript
+          <li class="right-section_list-item">
+            <h4 class="header subsection__header">Web Developer</h4>
+
+            <p class="paragraph"><b class="bold">Upwork</b> | Jan 2016 - June 2021</p>
+
+            <p class="paragraph"><b class="bold">project:</b> Simplex Food</p>
+
+            <p class="paragraph">
+              <b class="bold">description:</b>
+
+              an application for calculating the balance of nutrients in a diet
+            </p>
+
+            <p class="paragraph bold">achievements:</p>
+
+            <ul>
+              <li>
+                gave the application high interactivity by designing
+                and developing it with Vue, Vuex and Vue Router;
+              </li>
+
+              <li>
+                provided a responsive user experience by implementing the
+                interface using Vuetify;
+              </li>
+
+              <li>
+                guaranteed application independence by implementing IndexedDB
+                data storage via Dexie;
+              </li>
+
+              <li>
+                implemented the main functionality by writing a simplex method
+                in JavaScript code.
+              </li>
+
+              <li>
+                ensured smooth development with tools such as Git, GitHub,
+                Webpack, npm.
+              </li>
+            </ul>
           </li>
 
-          <li>
-            <b class="bold">Vue</b>
-            - Vue CLI, Composition API, Vue Router, Nuxt.js, Vue
-            Test Utils, Vuex, Pinia, Vuetify, Axios, Bootstrap-vue, Element Plus
-          </li>
+          <li class="right-section_list-item">
+            <h4 class="header subsection__header">Customer</h4>
 
-          <li>
-            <b class="bold">Tools</b>
-            - Git, Github, npm, ESLint, Vite, Webpack, Jest, Vitest
+            <p class="paragraph">
+              <b class="bold">Grodno Regional Customs</b>
+
+              | July 2011 - Dec 2015
+            </p>
           </li>
         </ul>
       </section>
 
       <section class="subsection">
-        <h3 class="header section__header">About Me</h3>
+        <h3 class="header section__header">Education</h3>
 
-        <p class="paragraph">
-          I am an artificial intelligence enthusiast. In my spare time, I study
-          machine learning as well as articles and books on programming in
-          general. I try to stay up to date with the latest developments in the
-          field of programming and improve my skills. I am also working on a
-          pet project in the field of neural networks.
-        </p>
+        <ul class="right-section_list">
+          <li class="right-section_list-item">
+            <h4 class="header subsection__header">Bachelor of Mathematics</h4>
+
+            <p class="paragraph">Grodno State University</p>
+
+            <p class="paragraph">Sep 2006 - June 2011</p>
+          </li>
+        </ul>
       </section>
     </div>
 
-    <section class="section right-section">
-      <h3 class="header section__header">Work Experience</h3>
 
-      <ul class="jobs-list">
-        <li class="jobs-list-item">
-          <h4 class="header subsection__header">Frontend Web Developer</h4>
-
-          <p class="paragraph">
-            <b class="bold">Godel Technologies Europe sp. z o.o.</b>
-
-            | 2022 - 2023
-          </p>
-
-          <p class="paragraph"><b class="bold">project:</b> Air Check</p>
-
-          <p class="paragraph">
-            <b class="bold">description:</b>
-
-            interface for carbon dioxide sensor
-          </p>
-
-          <p class="paragraph bold">achievements:</p>
-
-          <ul>
-            <li>
-              provided a pleasant user experience by designing the interface
-              with Vuetify;
-            </li>
-
-            <li>
-              enriched the user experience by implementing dynamic graphics
-              based on Chart.js;
-            </li>
-
-            <li>
-              provided communication with the backend by implementing the
-              functionality using Axios;
-            </li>
-
-            <li>
-              gave the application dynamics and interactivity by writing it
-              using Vue, Vue Router, Pinia;
-            </li>
-
-            <li>
-              gave the application scalability using TypeScript and SOLID
-              architecture;
-            </li>
-
-            <li>
-              increased the reliability of the code by covering it with unit
-              tests using Vitest;
-            </li>
-
-            <li>
-              ensured smooth development with tools such as Git, GitHub,
-              Vite, npm.
-            </li>
-          </ul>
-        </li>
-
-        <li class="jobs-list-item">
-          <h4 class="header subsection__header">Frontend Web Developer</h4>
-
-          <p class="paragraph"><b class="bold">Twelvedevs</b> | 2021 - 2022</p>
-
-          <p class="paragraph"><b class="bold">project:</b> OpenDining</p>
-
-          <p class="paragraph">
-            <b class="bold">description:</b>
-
-            fully customizable online ordering system for restaurants
-          </p>
-
-          <p class="paragraph bold">achievements:</p>
-
-          <ul>
-            <li>
-              improved the user experience by extending the interface with
-              BootstrapVue and SCSS;
-            </li>
-
-            <li>
-              provided communication with the backend by integrating REST API
-              endpoints using Axios;
-            </li>
-
-            <li>
-              implemented a system of instant notifications through WebSockets;
-            </li>
-
-            <li>
-              increased the reliability of the code by covering it with unit
-              tests using Jest;
-            </li>
-
-            <li>
-              enriched the codebase by writing code using JavaScript, Vue,
-              Vuex, Vue-Router, Nuxt;
-            </li>
-
-            <li>
-              ensured smooth development with tools such as Git, GitHub,
-              Webpack, npm.
-            </li>
-          </ul>
-        </li>
-
-        <li class="jobs-list-item">
-          <h4 class="header subsection__header">Web Developer</h4>
-
-          <p class="paragraph"><b class="bold">Upwork</b> | 2016 - 2021</p>
-
-          <p class="paragraph"><b class="bold">project:</b> Simplex Food</p>
-
-          <p class="paragraph">
-            <b class="bold">description:</b>
-
-            an application for calculating the balance of nutrients in a diet
-          </p>
-
-          <p class="paragraph bold">achievements:</p>
-
-          <ul>
-            <li>
-              gave the application high interactivity by designing
-              and developing it with Vue, Vuex and Vue Router;
-            </li>
-
-            <li>
-              provided a responsive user experience by implementing the
-              interface using Vuetify;
-            </li>
-
-            <li>
-              guaranteed application independence by implementing IndexedDB
-              data storage via Dexie;
-            </li>
-
-            <li>
-              implemented the main functionality by writing a simplex method
-              in JavaScript code.
-            </li>
-
-            <li>
-              ensured smooth development with tools such as Git, GitHub,
-              Webpack, npm.
-            </li>
-          </ul>
-        </li>
-
-        <li class="jobs-list-item">
-          <h4 class="header subsection__header">Customer</h4>
-
-          <p class="paragraph">
-            <b class="bold">Grodno Regional Customs</b>
-
-            | 2011 - 2016
-          </p>
-        </li>
-      </ul>
-    </section>
   </main>
 
   
