@@ -275,6 +275,11 @@ ul {
   padding: 0;
 }
 
+.skill-item {
+  line-height: 1.25rem;
+  margin-top: 4px;
+}
+
 .right-section_list {
   --shift: 2rem + var(--jobs-list-padding);
 
