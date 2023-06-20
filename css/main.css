@@ -513,6 +513,11 @@ print and (max-width: 480px) {
     page-break-after: avoid;
   }
 
+  /* unknown visual bug */
+  .subsection:not(:first-of-type) {
+    margin-top: 50px;
+  }
+
   .contact-list {
     word-wrap: break-word;
   }
