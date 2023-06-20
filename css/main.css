@@ -91,7 +91,7 @@ textarea {
 
 :root {
   --border: 2px solid #dbdbdb;
-  --left-section-width: 200px;
+  --left-section-width: 250px;
   --jobs-list-padding: 43px;
   --section-padding: 51px;
   --text-color: #666666;
