@@ -297,6 +297,30 @@ ul {
   content: "⬤";
 }
 
+.chip {
+  --chip-height: 1.2rem;
+
+  background-color: #cfcfcf;
+  border-radius: 10px;
+  display: inline-block;
+  height: var(--chip-height);
+  position: relative;
+}
+
+/*.chip::before {
+  --chip-border: calc(var(--chip-height) / 2);
+
+  background-color: #cfcfcf;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  content: '';
+  display: block;
+  height: var(--chip-height);
+  position: absolute;
+  left: calc(-1 * var(--chip-border));
+  width: var(--chip-border);
+}*/
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
